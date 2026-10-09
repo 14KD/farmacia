@@ -1,12 +1,20 @@
 import customtkinter as ctk
 from tkinter import messagebox, BooleanVar
+<<<<<<< HEAD
 import config
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 from database.connection import create_connection
 from auth.security import verify_password
 from auth import session
 from ui.dashboard import Dashboard
+<<<<<<< HEAD
 from utils.logger import write_log, log_login
 from auth.recover_password import RecoverPasswordWindow  # noqa: F401 (ya no se usa; se deja por compatibilidad)
+=======
+from utils.logger import write_log
+from auth.recover_password import RecoverPasswordWindow
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
 
 class LoginWindow:
@@ -186,6 +194,7 @@ class LoginWindow:
         )
         remember_cb.pack(side="left")
 
+<<<<<<< HEAD
         # Precargar el último usuario recordado en este dispositivo (si aplica)
         _login_cfg = config.load().get("login", {})
         if _login_cfg.get("remember") and _login_cfg.get("last_username"):
@@ -193,6 +202,8 @@ class LoginWindow:
             self.remember_var.set(True)
             self.password_entry.focus()
 
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         recover_btn = ctk.CTkButton(
             options_frame,
             text="¿Olvidaste tu contraseña?",
@@ -284,6 +295,7 @@ class LoginWindow:
             session.current_user = user
             session.current_role = user[3]
 
+<<<<<<< HEAD
             # "Recordarme" en este dispositivo: solo guarda el nombre de
             # usuario (nunca la contraseña), para precargarlo la próxima vez.
             cfg = config.load()
@@ -319,6 +331,19 @@ class LoginWindow:
 
         else:
             log_login(username, False)
+=======
+            write_log(f"Login exitoso: {username}")
+
+            self.root.destroy()
+
+            dashboard_root = ctk.CTk()
+            dashboard_root.geometry("1200x700")
+            Dashboard(dashboard_root)
+            dashboard_root.after(50, lambda: dashboard_root.state("zoomed"))
+            dashboard_root.mainloop()
+
+        else:
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
             messagebox.showerror(
                 "Error",
                 "Usuario o contraseña incorrectos."
@@ -329,6 +354,7 @@ class LoginWindow:
     # =========================================
 
     def open_recovery(self):
+<<<<<<< HEAD
         messagebox.showinfo(
             "Recuperar contraseña",
             "Por seguridad, este sistema no permite cambiar contraseñas "
@@ -336,3 +362,7 @@ class LoginWindow:
             "Si olvidaste tu contraseña, pídele a un administrador que "
             "te la restablezca desde el módulo Usuarios."
         )
+=======
+        recovery_root = ctk.CTkToplevel()
+        RecoverPasswordWindow(recovery_root)
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43

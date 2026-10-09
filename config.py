@@ -5,12 +5,16 @@ Lee y escribe en config.json en la raíz del proyecto.
 import json
 import os
 
+<<<<<<< HEAD
 # Ruta absoluta, anclada a la carpeta del proyecto (donde vive este archivo).
 # Antes era solo "config.json" (ruta relativa), lo que hacía que los ajustes
 # guardados (incluido el logo) "desaparecieran" si el programa se abría
 # desde un acceso directo o carpeta distinta a la del proyecto, porque
 # terminaba leyendo/escribiendo un config.json diferente cada vez.
 CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
+=======
+CONFIG_FILE = "config.json"
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
 DEFAULTS = {
     "pharmacy": {
@@ -32,6 +36,7 @@ DEFAULTS = {
     "notifications": {
         "alert_low_stock": True,
         "alert_expiry":    True
+<<<<<<< HEAD
     },
     "purchases": {
         "prevent_duplicate_invoice": True
@@ -39,6 +44,8 @@ DEFAULTS = {
     "login": {
         "remember":       False,
         "last_username":  ""
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
     }
 }
 

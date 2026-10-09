@@ -1,5 +1,8 @@
 import customtkinter as ctk
+<<<<<<< HEAD
 from ui.live_search import LiveSearch
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 from tkinter import ttk, messagebox
 from database.connection import create_connection
 from auth.security import hash_password
@@ -119,6 +122,7 @@ class UsersUI:
 
         style = ttk.Style()
         style.theme_use("clam")
+<<<<<<< HEAD
         style.configure("USR.Treeview", background="#1A1D27", foreground="#FFFFFF",
                          fieldbackground="#1A1D27", borderwidth=0, font=("Arial", 12), rowheight=36)
         style.configure("USR.Treeview.Heading", background="#1E2130", foreground="#8B8FA8",
@@ -126,10 +130,20 @@ class UsersUI:
         style.map("USR.Treeview",
                   background=[("selected", "#1A2E22"), ("!selected", "#1A1D27")],
                   foreground=[("selected", "#3DD68C"), ("!selected", "#FFFFFF")])
+=======
+        style.configure("USR.Treeview", background=CARD, foreground=TEXT,
+                         fieldbackground=CARD, borderwidth=0, font=("Arial", 12), rowheight=36)
+        style.configure("USR.Treeview.Heading", background="#1E2130", foreground=SUBTEXT,
+                         font=("Arial", 11, "bold"), borderwidth=0)
+        style.map("USR.Treeview",
+                  background=[("selected", "#1A2E22")],
+                  foreground=[("selected", ACCENT)])
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
         cols = ("ID", "Usuario", "Rol")
         self.tree = ttk.Treeview(table_card, columns=cols, show="headings",
                                   height=12, style="USR.Treeview")
+<<<<<<< HEAD
         try:
             self.tree.configure(style=self.tree["style"])
             self.tree.tk.call("ttk::style", "configure", self.tree["style"], "-fieldbackground", "#1A1D27")
@@ -137,6 +151,8 @@ class UsersUI:
             self.tree.tk.call("ttk::style", "configure", self.tree["style"], "-foreground", "#FFFFFF")
         except Exception:
             pass
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         for col, w, anc in [("ID", 60, "center"), ("Usuario", 240, "w"), ("Rol", 160, "w")]:
             self.tree.heading(col, text=col)
             self.tree.column(col, width=w, anchor=anc)
@@ -199,6 +215,7 @@ class UsersUI:
     # ─── Helper campo ─────────────────────────
 
     def _field(self, parent, placeholder, col, show=""):
+<<<<<<< HEAD
         frame = ctk.CTkFrame(parent, fg_color="transparent")
         frame.grid(row=0, column=col, padx=(0, 10), pady=(0, 8), sticky="ew")
         ctk.CTkLabel(frame, text=placeholder.strip(), font=("Arial", 11),
@@ -209,6 +226,17 @@ class UsersUI:
         entry = ctk.CTkEntry(ef, border_width=0, fg_color="transparent",
                               height=38, font=("Arial", 13),
                               text_color=TEXT, show=show)
+=======
+        frame = ctk.CTkFrame(parent, fg_color=INPUT_BG, corner_radius=8,
+                              border_width=1, border_color=INPUT_BORDER)
+        frame.grid(row=0, column=col, padx=(0, 10), sticky="ew", ipady=2)
+        entry = ctk.CTkEntry(
+            frame, placeholder_text=placeholder, border_width=0,
+            fg_color="transparent", height=42, font=("Arial", 13),
+            text_color=TEXT, placeholder_text_color="#555870",
+            show=show
+        )
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         entry.pack(fill="x", padx=8)
         return entry
 
@@ -226,6 +254,7 @@ class UsersUI:
 
     def load_users(self):
         for i in self.tree.get_children(): self.tree.delete(i)
+<<<<<<< HEAD
         conn = self.get_connection()
         try:
             cur = conn.cursor()
@@ -234,6 +263,13 @@ class UsersUI:
                 self.tree.insert("", "end", values=row)
         finally:
             conn.close()
+=======
+        conn = self.get_connection(); cur = conn.cursor()
+        cur.execute("SELECT id, username, role FROM users ORDER BY id")
+        for row in cur.fetchall():
+            self.tree.insert("", "end", values=row)
+        conn.close()
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
     # ─── Crear usuario ────────────────────────
 
@@ -302,6 +338,7 @@ class UsersUI:
     def make_admin(self):
         uid = self._get_selected_id()
         if not uid: return
+<<<<<<< HEAD
         conn = self.get_connection()
         try:
             cur = conn.cursor()
@@ -309,12 +346,18 @@ class UsersUI:
             conn.commit()
         finally:
             conn.close()
+=======
+        conn = self.get_connection(); cur = conn.cursor()
+        cur.execute("UPDATE users SET role='Administrador' WHERE id=?", (uid,))
+        conn.commit(); conn.close()
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         messagebox.showinfo("Éxito", "Usuario actualizado a Administrador.")
         self.load_users()
 
     def make_employee(self):
         uid = self._get_selected_id()
         if not uid: return
+<<<<<<< HEAD
         conn = self.get_connection()
         try:
             cur = conn.cursor()
@@ -322,6 +365,11 @@ class UsersUI:
             conn.commit()
         finally:
             conn.close()
+=======
+        conn = self.get_connection(); cur = conn.cursor()
+        cur.execute("UPDATE users SET role='employee' WHERE id=?", (uid,))
+        conn.commit(); conn.close()
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         messagebox.showinfo("Éxito", "Usuario actualizado a Empleado.")
         self.load_users()
 
@@ -334,6 +382,7 @@ class UsersUI:
         sel = self.tree.selection()
         username = self.tree.item(sel[0], "values")[1]
 
+<<<<<<< HEAD
         if username == "admin":
             messagebox.showerror(
                 "No permitido",
@@ -342,6 +391,8 @@ class UsersUI:
             )
             return
 
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         # Ventana modal para nueva contraseña
         win = ctk.CTkToplevel(self.parent)
         win.title("Resetear Contraseña")
@@ -384,7 +435,11 @@ class UsersUI:
             if p1 != p2:
                 messagebox.showerror("Error", "Las contraseñas no coinciden."); return
             conn = self.get_connection(); cur = conn.cursor()
+<<<<<<< HEAD
             cur.execute("UPDATE users SET password=? WHERE id=? AND username<>'admin'", (hash_password(p1), uid))
+=======
+            cur.execute("UPDATE users SET password=? WHERE id=?", (hash_password(p1), uid))
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
             conn.commit(); conn.close()
             messagebox.showinfo("Éxito", f"Contraseña de '{username}' actualizada.")
             win.destroy()
@@ -403,6 +458,7 @@ class UsersUI:
         if username == "admin":
             messagebox.showerror("Error", "No se puede eliminar el usuario admin."); return
         if not messagebox.askyesno("Confirmar", f"¿Eliminar al usuario '{username}'?\nEsta acción no se puede deshacer."): return
+<<<<<<< HEAD
         conn = self.get_connection()
         try:
             cur = conn.cursor()
@@ -413,3 +469,11 @@ class UsersUI:
         messagebox.showinfo("Éxito", f"Usuario '{username}' eliminado.")
         self.load_users()
         self.selected_lbl.configure(text="Ningún usuario\nseleccionado")
+=======
+        conn = self.get_connection(); cur = conn.cursor()
+        cur.execute("DELETE FROM users WHERE id=?", (uid,))
+        conn.commit(); conn.close()
+        messagebox.showinfo("Éxito", f"Usuario '{username}' eliminado.")
+        self.load_users()
+        self.selected_lbl.configure(text="Ningún usuario\nseleccionado")
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43

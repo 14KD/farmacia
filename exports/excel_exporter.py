@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment
@@ -63,3 +64,25 @@ def _open_file(path: str):
             subprocess.run(["open", path], check=False)        # macOS
     except Exception:
         pass  # Si falla, no bloquea el flujo
+=======
+import pandas as pd
+
+
+def export_to_excel(
+    data,
+    columns,
+    filename
+):
+
+    df = pd.DataFrame(
+        data,
+        columns=columns
+    )
+
+    df.to_excel(
+        filename,
+        index=False
+    )
+
+    return filename
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43

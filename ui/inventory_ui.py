@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 ui/inventory_ui.py — Inventario General (visión gerencial y control).
 Responsabilidades exclusivas de este módulo:
@@ -962,3 +963,6 @@ class InventoryUI:
             )
         except Exception as e:
             messagebox.showerror("Error exportando", str(e))
+=======
+# Inventario avanzado
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43

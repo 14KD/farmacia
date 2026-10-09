@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 from auth import session
+<<<<<<< HEAD
 import config
 from database.connection import create_connection
 from database.backup import create_backup, restore_backup
@@ -38,6 +39,17 @@ def _get_ui(name):
         elif name == "PurchasesUI":
             from ui.purchases_ui import PurchasesUI; _UI_MODULES[name] = PurchasesUI
     return _UI_MODULES[name]
+=======
+from database.connection import create_connection
+from database.backup import create_backup, restore_backup
+from ui.products_ui import ProductsUI
+from ui.customers_ui import CustomersUI
+from ui.invoices_ui import InvoicesUI
+from ui.reports_ui import ReportsUI
+from ui.users_ui import UsersUI
+from ui.settings_ui import SettingsUI
+from ui.suppliers_ui import SuppliersUI
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 from utils.logger import write_log
 
 
@@ -61,6 +73,7 @@ class Dashboard:
         self.root = root
         self.root.title("FarmaFactura Pro")
         self.root.configure(fg_color=BG)
+<<<<<<< HEAD
         self.root.minsize(1000, 640)
         self.nav_buttons = {}
         self._section_frames = {}
@@ -85,6 +98,15 @@ class Dashboard:
         self._register_shortcuts()
         aid = self.root.after(1000, self._preload_sections)
         self._after_ids.append(aid)
+=======
+        self.nav_buttons = {}
+        self._section_frames = {}   # cache de frames por sección
+        self._chart_cache   = {}   # cache de datos para gráficos
+
+        self._build_sidebar()
+        self._build_main_area()
+        self.show_home()
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
     # ═════════════════════════════════════════════
     # SIDEBAR
@@ -95,9 +117,16 @@ class Dashboard:
         self.sidebar = ctk.CTkFrame(
             self.root, width=190, corner_radius=0, fg_color=SIDEBAR_BG
         )
+<<<<<<< HEAD
         self.sidebar.pack(side="left", fill="y", expand=False)
         self.sidebar.pack_propagate(False)
 
+=======
+        self.sidebar.pack(side="left", fill="y")
+        self.sidebar.pack_propagate(False)
+
+        # Logo
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         logo_row = ctk.CTkFrame(self.sidebar, fg_color="transparent")
         logo_row.pack(pady=(22, 16), padx=14, fill="x")
 
@@ -108,13 +137,21 @@ class Dashboard:
 
         ctk.CTkLabel(logo_row, text="FarmaFactura", font=("Georgia", 13, "bold"), text_color=TEXT).pack(side="left")
 
+<<<<<<< HEAD
         ctk.CTkFrame(self.sidebar, height=1, fg_color=CARD_BORDER).pack(fill="x", padx=14, pady=(0, 10))
 
+=======
+        # Divisor
+        ctk.CTkFrame(self.sidebar, height=1, fg_color=CARD_BORDER).pack(fill="x", padx=14, pady=(0, 10))
+
+        # Items de navegación
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         is_admin = session.current_role in ("admin", "Administrador")
 
         nav_items = [
             ("🏠", "Resumen",    self.show_home,     True),
             ("🧾", "Ventas",     self.show_invoices,  True),
+<<<<<<< HEAD
             ("🗂", "Historial",  self.show_history,   True),
             ("📦", "Lotes",      self.show_lots,      is_admin),
             ("🛒", "Compras",    self.show_purchases, is_admin),
@@ -124,6 +161,12 @@ class Dashboard:
             ("👥", "Clientes",   self.show_customers, True),
             ("📊", "Reportes",   self.show_reports,   is_admin),
             ("🏦", "Caja",       self.show_cash,      is_admin),
+=======
+            ("📦", "Inventario", self.show_products,  True),
+            ("🏭", "Proveedores",self.show_suppliers, True),
+            ("👥", "Clientes",   self.show_customers, True),
+            ("📊", "Reportes",   self.show_reports,   is_admin),
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
             ("👤", "Usuarios",   self.show_users,     is_admin),
             ("⚙",  "Ajustes",   self.show_settings,  True),
         ]
@@ -146,11 +189,19 @@ class Dashboard:
             btn.pack(fill="x", padx=10, pady=2)
             self.nav_buttons[label] = btn
 
+<<<<<<< HEAD
+=======
+        # Botones inferiores
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         bottom = ctk.CTkFrame(self.sidebar, fg_color="transparent")
         bottom.pack(side="bottom", fill="x", padx=10, pady=14)
 
         ctk.CTkFrame(self.sidebar, height=1, fg_color=CARD_BORDER).pack(side="bottom", fill="x", padx=14, pady=4)
 
+<<<<<<< HEAD
+=======
+        # Cerrar sesión
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         ctk.CTkButton(
             bottom, text="🚪  Cerrar Sesión", height=38, corner_radius=8,
             fg_color="#2A1A2E", hover_color="#6B21A8",
@@ -190,18 +241,27 @@ class Dashboard:
 
         wrapper = ctk.CTkFrame(self.root, fg_color=BG, corner_radius=0)
         wrapper.pack(side="right", fill="both", expand=True)
+<<<<<<< HEAD
         wrapper.pack_propagate(True)
 
         topbar = ctk.CTkFrame(wrapper, fg_color=SIDEBAR_BG, height=54, corner_radius=0)
         topbar.pack(fill="x")
         topbar.pack_propagate(False)
         self._topbar = topbar
+=======
+
+        # ── Topbar ──
+        topbar = ctk.CTkFrame(wrapper, fg_color=SIDEBAR_BG, height=54, corner_radius=0)
+        topbar.pack(fill="x")
+        topbar.pack_propagate(False)
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
         self.topbar_title = ctk.CTkLabel(
             topbar, text="", font=("Arial", 14, "bold"), text_color=TEXT
         )
         self.topbar_title.pack(side="left", padx=20)
 
+<<<<<<< HEAD
         # Indicador de precarga en segundo plano (ver _preload_sections) —
         # visible mientras se construyen las demás secciones, para que el
         # usuario vea por qué la navegación se siente fluida después.
@@ -210,10 +270,17 @@ class Dashboard:
         )
         self._preload_lbl.pack(side="left", padx=(0, 10))
 
+=======
+        # Reloj
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         self.clock_lbl = ctk.CTkLabel(topbar, text="", font=("Arial", 13), text_color=SUBTEXT)
         self.clock_lbl.pack(side="right", padx=20)
         self._tick()
 
+<<<<<<< HEAD
+=======
+        # Saludo usuario
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         user = session.current_user
         username = user[1] if isinstance(user, tuple) else str(user)
         ctk.CTkLabel(
@@ -223,6 +290,10 @@ class Dashboard:
 
         ctk.CTkLabel(topbar, text="🔔", font=("Arial", 16), text_color=SUBTEXT).pack(side="right", padx=10)
 
+<<<<<<< HEAD
+=======
+        # ── Área de contenido scrollable ──
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         self.main_frame = ctk.CTkScrollableFrame(
             wrapper, fg_color=BG, corner_radius=0,
             scrollbar_button_color="#252836",
@@ -231,12 +302,17 @@ class Dashboard:
         self.main_frame.pack(fill="both", expand=True)
 
     def _tick(self):
+<<<<<<< HEAD
         try:
             self.clock_lbl.configure(text=datetime.now().strftime("%I:%M %p"))
             aid = self.root.after(60000, self._tick)
             self._after_ids.append(aid)
         except Exception:
             pass
+=======
+        self.clock_lbl.configure(text=datetime.now().strftime("%I:%M %p"))
+        self.root.after(60000, self._tick)
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
     # ═════════════════════════════════════════════
     # UTILIDADES DE TARJETAS
@@ -258,6 +334,7 @@ class Dashboard:
         ctk.CTkFrame(parent, height=1, fg_color=CARD_BORDER).pack(fill="x", padx=14, pady=(0, 6))
 
     # ═════════════════════════════════════════════
+<<<<<<< HEAD
     # SHORTCUTS
     # ═════════════════════════════════════════════
 
@@ -442,6 +519,14 @@ class Dashboard:
         _build_next(0)
 
     def show_home(self):
+=======
+    # RESUMEN / HOME
+    # ═════════════════════════════════════════════
+
+    def show_home(self):
+
+        # Dashboard siempre muestra datos frescos
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         key = "home"
         if key in self._section_frames:
             self._section_frames[key].destroy()
@@ -452,6 +537,7 @@ class Dashboard:
         self._build_home(home_frame)
 
     def _build_home(self, parent):
+<<<<<<< HEAD
         _MESES_ES = ["enero","febrero","marzo","abril","mayo","junio","julio",
                      "agosto","septiembre","octubre","noviembre","diciembre"]
         _now = datetime.now()
@@ -459,11 +545,15 @@ class Dashboard:
             text=f"Panel de Control  —  {_now.day} de {_MESES_ES[_now.month-1]} de {_now.year}")
 
         cy = config.load()["billing"].get("currency", "RD$")
+=======
+        self.topbar_title.configure(text=f"Panel de Control  —  {datetime.now().strftime('%d de %B de %Y')}")
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
         for b in self.nav_buttons.values():
             b.configure(fg_color="transparent", text_color=SUBTEXT)
         self.nav_buttons["Resumen"].configure(fg_color="#1A2E22", text_color=ACCENT)
 
+<<<<<<< HEAD
         # ── Consultas — siempre cerrar con try/finally ──
         conn = create_connection()
         try:
@@ -513,6 +603,57 @@ class Dashboard:
 
         finally:
             conn.close()   # ← SIEMPRE se libera la conexión al pool
+=======
+        # ── Consultas ──
+        conn = create_connection()
+        cur  = conn.cursor()
+        today = datetime.now().strftime("%Y-%m-%d")
+
+        cur.execute("SELECT IFNULL(SUM(total),0) FROM invoices WHERE purchase_date LIKE ?", (f"{today}%",))
+        sales_today = cur.fetchone()[0]
+
+        cur.execute("SELECT COUNT(*) FROM invoices WHERE purchase_date LIKE ?", (f"{today}%",))
+        invoices_today = cur.fetchone()[0]
+
+        cur.execute("SELECT COUNT(*) FROM products")
+        total_products = cur.fetchone()[0]
+
+        cur.execute("SELECT COUNT(*) FROM customers")
+        total_customers = cur.fetchone()[0]
+
+        cur.execute("SELECT name, stock, 10 FROM products WHERE stock > 0 AND stock <= 10 ORDER BY stock ASC LIMIT 6")
+        low_stock = cur.fetchall()
+
+        cur.execute("""
+            SELECT product_name, SUM(quantity) q
+            FROM invoice_items GROUP BY product_name ORDER BY q DESC LIMIT 7
+        """)
+        top_products = cur.fetchall()
+
+        cur.execute("SELECT id, customer_name, total, purchase_date FROM invoices ORDER BY id DESC LIMIT 6")
+        recent_inv = cur.fetchall()
+
+        # Últimos 7 días
+        cur.execute("""
+            SELECT purchase_date, IFNULL(SUM(total),0)
+            FROM invoices
+            WHERE purchase_date >= date('now','-6 days')
+            GROUP BY purchase_date
+            ORDER BY purchase_date
+        """)
+        weekly = cur.fetchall()
+
+        # Ventas por mes (año actual)
+        cur.execute("""
+            SELECT strftime('%m', purchase_date) mes, IFNULL(SUM(total),0)
+            FROM invoices
+            WHERE strftime('%Y', purchase_date) = strftime('%Y','now')
+            GROUP BY mes ORDER BY mes
+        """)
+        monthly = cur.fetchall()
+
+        conn.close()
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
         # ══════════════════════════════════════════
         # FILA 0 — 4 TARJETAS ESTADÍSTICAS
@@ -522,7 +663,11 @@ class Dashboard:
         stats_row.columnconfigure((0,1,2,3), weight=1)
 
         for col, icon, label, value, color in [
+<<<<<<< HEAD
             (0, "💰", "Ventas Hoy",        f"{cy} {sales_today:,.2f}", ACCENT),
+=======
+            (0, "💰", "Ventas Hoy",        f"${sales_today:,.2f}", ACCENT),
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
             (1, "🧾", "Facturas Hoy",      str(invoices_today),    CYAN),
             (2, "📦", "Total Productos",   str(total_products),    "#C084FC"),
             (3, "👥", "Total Clientes",    str(total_customers),   WARNING),
@@ -553,18 +698,29 @@ class Dashboard:
         fig1.patch.set_facecolor(CARD)
         ax1.set_facecolor(CARD)
         if weekly:
+<<<<<<< HEAD
             days  = [w[0].strftime("%m-%d") if hasattr(w[0], "strftime") else str(w[0])[5:] for w in weekly]
             vals  = [w[1] for w in weekly]
             bars  = ax1.bar(days, vals, color=ACCENT, width=0.5)
             ax1.set_ylim(0, float(max(vals)) * 1.18)
+=======
+            days  = [w[0][5:] for w in weekly]   # MM-DD
+            vals  = [w[1] for w in weekly]
+            bars  = ax1.bar(days, vals, color=ACCENT, width=0.5)
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
             ax1.tick_params(colors=SUBTEXT, labelsize=7)
             ax1.spines[:].set_visible(False)
             ax1.yaxis.set_visible(False)
             for bar, val in zip(bars, vals):
+<<<<<<< HEAD
                 ax1.annotate(f"{cy}{float(val):,.0f}",
                              xy=(bar.get_x() + bar.get_width()/2, bar.get_height()),
                              xytext=(0, 3), textcoords="offset points",
                              ha="center", va="bottom", color=SUBTEXT, fontsize=6)
+=======
+                ax1.text(bar.get_x() + bar.get_width()/2, bar.get_height() + max(vals)*0.02,
+                         f"${val:,.0f}", ha="center", color=SUBTEXT, fontsize=6)
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         else:
             ax1.text(0.5, 0.5, "Sin ventas esta semana", ha="center", va="center",
                      color=SUBTEXT, transform=ax1.transAxes, fontsize=9)
@@ -631,7 +787,11 @@ class Dashboard:
             ctk.CTkLabel(c_top, text="Sin ventas registradas aún.",
                          text_color=SUBTEXT, font=("Arial", 12)).pack(pady=24)
 
+<<<<<<< HEAD
         # ── [1,1] Alertas ───────────────────────
+=======
+        # ── [1,1] Alertas + Facturas recientes ───
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         mid_col = ctk.CTkFrame(grid, fg_color="transparent")
         mid_col.grid(row=1, column=1, padx=7, pady=7, sticky="nsew")
 
@@ -645,7 +805,11 @@ class Dashboard:
                      text=f"  ⚠  {len(low_stock)} productos con stock crítico",
                      font=("Arial", 12), text_color=WARNING).pack(anchor="w", padx=8, pady=10)
 
+<<<<<<< HEAD
         # ── [1,2] Facturas recientes ─────────────
+=======
+        # ── [1,2] Facturas recientes (clickeable) ─
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         inv_card = ctk.CTkFrame(grid, fg_color=CARD, corner_radius=12,
                                  border_width=1, border_color=CARD_BORDER)
         inv_card.grid(row=1, column=2, padx=7, pady=7, sticky="nsew")
@@ -655,6 +819,7 @@ class Dashboard:
     # ─── Treeview: Stock crítico ─────────────────
 
     def _treeview_stock(self, parent, items):
+<<<<<<< HEAD
         style = ttk.Style()
         style.theme_use("clam")
         style.configure("FF.Treeview",
@@ -668,16 +833,35 @@ class Dashboard:
         style.map("FF.Treeview",
             background=[("selected", "#1A2E22"), ("!selected", "#1A1D27")],
             foreground=[("selected", "#3DD68C"), ("!selected", "#FFFFFF")]
+=======
+
+        style = ttk.Style()
+        style.theme_use("clam")
+        style.configure("FF.Treeview",
+            background=CARD, foreground=TEXT, fieldbackground=CARD,
+            borderwidth=0, font=("Arial", 11), rowheight=26
+        )
+        style.configure("FF.Treeview.Heading",
+            background="#1E2130", foreground=SUBTEXT,
+            font=("Arial", 10, "bold"), borderwidth=0
+        )
+        style.map("FF.Treeview",
+            background=[("selected", "#1A2E22")],
+            foreground=[("selected", ACCENT)]
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         )
 
         cols = ("Medicamento", "Stock Actual", "Mín")
         tree = ttk.Treeview(parent, columns=cols, show="headings", height=6, style="FF.Treeview")
+<<<<<<< HEAD
         try:
             tree.tk.call("ttk::style", "configure", tree["style"], "-fieldbackground", "#1A1D27")
             tree.tk.call("ttk::style", "configure", tree["style"], "-background", "#1A1D27")
             tree.tk.call("ttk::style", "configure", tree["style"], "-foreground", "#FFFFFF")
         except Exception:
             pass
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         tree.heading("Medicamento",  text="Medicamento")
         tree.heading("Stock Actual", text="Stock Actual")
         tree.heading("Mín",          text="Stock Mínimo")
@@ -695,6 +879,7 @@ class Dashboard:
     # ─── Treeview: Facturas recientes ────────────
 
     def _treeview_invoices(self, parent, invoices):
+<<<<<<< HEAD
         style = ttk.Style()
         style.configure("FF.Treeview",
             background="#1A1D27", foreground="#FFFFFF", fieldbackground="#1A1D27",
@@ -707,16 +892,34 @@ class Dashboard:
         style.map("FF.Treeview",
             background=[("selected", "#1A2E22"), ("!selected", "#1A1D27")],
             foreground=[("selected", "#3DD68C"), ("!selected", "#FFFFFF")]
+=======
+
+        style = ttk.Style()
+        style.configure("FF.Treeview",
+            background=CARD, foreground=TEXT, fieldbackground=CARD,
+            borderwidth=0, font=("Arial", 11), rowheight=26
+        )
+        style.configure("FF.Treeview.Heading",
+            background="#1E2130", foreground=SUBTEXT,
+            font=("Arial", 10, "bold"), borderwidth=0
+        )
+        style.map("FF.Treeview",
+            background=[("selected", "#1A2E22")],
+            foreground=[("selected", ACCENT)]
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         )
 
         cols = ("ID", "Cliente", "Total", "Fecha")
         tree = ttk.Treeview(parent, columns=cols, show="headings", height=6, style="FF.Treeview")
+<<<<<<< HEAD
         try:
             tree.tk.call("ttk::style", "configure", tree["style"], "-fieldbackground", "#1A1D27")
             tree.tk.call("ttk::style", "configure", tree["style"], "-background", "#1A1D27")
             tree.tk.call("ttk::style", "configure", tree["style"], "-foreground", "#FFFFFF")
         except Exception:
             pass
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         tree.heading("ID",      text="ID")
         tree.heading("Cliente", text="Cliente")
         tree.heading("Total",   text="Total")
@@ -726,10 +929,16 @@ class Dashboard:
         tree.column("Total",   width=90,  anchor="e")
         tree.column("Fecha",   width=85,  anchor="center")
 
+<<<<<<< HEAD
         cy = config.load()["billing"].get("currency", "RD$")
         for inv in invoices:
             fecha = inv[3].strftime("%Y-%m-%d") if inv[3] else "—"
             tree.insert("", "end", values=(inv[0], inv[1], f"{cy} {float(inv[2] or 0):,.2f}", fecha))
+=======
+        for inv in invoices:
+            fecha = inv[3][:10] if inv[3] else "—"
+            tree.insert("", "end", values=(inv[0], inv[1], f"${inv[2]:,.2f}", fecha))
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         if not invoices:
             tree.insert("", "end", values=("—", "Sin registros", "—", "—"))
 
@@ -765,6 +974,7 @@ class Dashboard:
         card.pack(fill="both", expand=True, padx=20, pady=(0,20))
 
         style2 = ttk.Style()
+<<<<<<< HEAD
         style2.configure("DET2.Treeview", background="#1A1D27", foreground="#FFFFFF",
                           fieldbackground="#1A1D27", borderwidth=0, font=("Arial", 12), rowheight=32)
         style2.configure("DET2.Treeview.Heading", background="#1E2130", foreground="#8B8FA8",
@@ -779,12 +989,23 @@ class Dashboard:
             t2.tk.call("ttk::style", "configure", t2["style"], "-foreground", "#FFFFFF")
         except Exception:
             pass
+=======
+        style2.configure("DET2.Treeview", background=CARD, foreground=TEXT,
+                          fieldbackground=CARD, borderwidth=0, font=("Arial", 12), rowheight=32)
+        style2.configure("DET2.Treeview.Heading", background="#1E2130", foreground=SUBTEXT,
+                          font=("Arial", 11, "bold"), borderwidth=0)
+        style2.map("DET2.Treeview", background=[("selected","#1A2E22")], foreground=[("selected",ACCENT)])
+
+        cols2 = ("Producto", "Cantidad", "Precio Unit.", "Total")
+        t2 = ttk.Treeview(card, columns=cols2, show="headings", style="DET2.Treeview")
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         for col, w, anc in [("Producto",280,"w"),("Cantidad",90,"center"),
                               ("Precio Unit.",130,"e"),("Total",130,"e")]:
             t2.heading(col, text=col)
             t2.column(col, width=w, anchor=anc)
         t2.pack(fill="both", expand=True, padx=14, pady=14)
 
+<<<<<<< HEAD
         conn = create_connection()
         try:
             cur = conn.cursor()
@@ -798,6 +1019,17 @@ class Dashboard:
         for item in items:
             t2.insert("", "end", values=(item[0], item[1],
                                           f"{cy} {float(item[2] or 0):,.2f}", f"{cy} {float(item[3] or 0):,.2f}"))
+=======
+        conn = create_connection(); cur = conn.cursor()
+        cur.execute("""SELECT product_name, quantity, price, total
+                       FROM invoice_items WHERE invoice_id=?""", (invoice_id,))
+        items = cur.fetchall()
+        conn.close()
+
+        for item in items:
+            t2.insert("", "end", values=(item[0], item[1],
+                                          f"${item[2]:,.2f}", f"${item[3]:,.2f}"))
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         if not items:
             t2.insert("", "end", values=("Sin productos", "—", "—", "—"))
 
@@ -806,26 +1038,43 @@ class Dashboard:
     # ═════════════════════════════════════════════
 
     def clear_main_frame(self):
+<<<<<<< HEAD
+=======
+        """Oculta todos los frames de sección sin destruirlos."""
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         for frame in self._section_frames.values():
             frame.pack_forget()
 
     def _get_section_frame(self, key):
+<<<<<<< HEAD
+=======
+        """Retorna el frame de una sección, creándolo si no existe."""
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         if key not in self._section_frames:
             f = ctk.CTkFrame(self.main_frame, fg_color=BG, corner_radius=0)
             self._section_frames[key] = f
         return self._section_frames[key]
 
     def _show_section(self, key, builder_fn):
+<<<<<<< HEAD
         self.clear_main_frame()
         frame = self._get_section_frame(key)
         frame.pack(fill="both", expand=True)
         if not frame.winfo_children():
+=======
+        """Muestra una sección, construyéndola solo la primera vez."""
+        self.clear_main_frame()
+        frame = self._get_section_frame(key)
+        frame.pack(fill="both", expand=True)
+        if not frame.winfo_children():   # solo construir una vez
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
             builder_fn(frame)
 
     # ═════════════════════════════════════════════
     # NAVEGACIÓN
     # ═════════════════════════════════════════════
 
+<<<<<<< HEAD
     def show_lots(self):
         self.topbar_title.configure(text="Gestión de Lotes")
         key = "lots"
@@ -884,10 +1133,28 @@ class Dashboard:
 
     def show_invoices(self):
         self.topbar_title.configure(text="Ventas / Facturación")
+=======
+    def show_suppliers(self):
+        self.topbar_title.configure(text="Proveedores")
+        self._show_section("suppliers", lambda f: SuppliersUI(f))
+
+    def show_products(self):
+        self.topbar_title.configure(text="Inventario de Productos")
+        self._show_section("products", lambda f: ProductsUI(f))
+
+    def show_customers(self):
+        self.topbar_title.configure(text="Gestión de Clientes")
+        self._show_section("customers", lambda f: CustomersUI(f))
+
+    def show_invoices(self):
+        self.topbar_title.configure(text="Ventas / Facturación")
+        # Facturación siempre se reconstruye (carrito limpio)
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         key = "invoices"
         if key in self._section_frames:
             self._section_frames[key].destroy()
             del self._section_frames[key]
+<<<<<<< HEAD
         self._show_section(key, lambda f: _get_ui("InvoicesUI")(f))
 
     def show_cash(self):
@@ -955,13 +1222,65 @@ class Dashboard:
                 "real de la base de datos.\n\n"
                 f"Se guardaron instrucciones para hacerlo manualmente en:\n\n{dest_path}")
             write_log(f"Backup falló (mysqldump no encontrado); instrucciones en: {dest_path}")
+=======
+        self._show_section(key, lambda f: InvoicesUI(f))
+
+    def show_reports(self):
+        self.topbar_title.configure(text="Reportes")
+        self._show_section("reports", lambda f: ReportsUI(f))
+
+    def show_users(self):
+        self.topbar_title.configure(text="Usuarios del Sistema")
+        self._show_section("users", lambda f: UsersUI(f))
+
+    def show_settings(self):
+        self.topbar_title.configure(text="Ajustes")
+        self._show_section("settings", lambda f: SettingsUI(f))
+
+    # ═════════════════════════════════════════════
+    # BACKUP
+    # ═════════════════════════════════════════════
+
+    def logout(self):
+        if not messagebox.askyesno("Cerrar Sesión", "¿Seguro que deseas cerrar sesión?"):
+            return
+        session.current_user = None
+        session.current_role = None
+        self.root.destroy()
+        import customtkinter as ctk2
+        from auth.login_window import LoginWindow
+        login_root = ctk2.CTk()
+        login_root.title("FarmaFactura Pro — Login")
+        login_root.geometry("460x580")
+        login_root.resizable(False, False)
+        login_root.update_idletasks()
+        w, h = 460, 580
+        x = (login_root.winfo_screenwidth()  // 2) - (w // 2)
+        y = (login_root.winfo_screenheight() // 2) - (h // 2)
+        login_root.geometry(f"{w}x{h}+{x}+{y}")
+        LoginWindow(login_root)
+        login_root.mainloop()
+
+    def make_backup(self):
+        backup_file = create_backup()
+        messagebox.showinfo("Backup", f"Backup creado:\n{backup_file}")
+        write_log(f"Backup creado: {backup_file}")
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
     def restore_database(self):
         backup_file = filedialog.askopenfilename(
             title="Seleccionar Backup",
+<<<<<<< HEAD
             filetypes=[("Respaldo MariaDB", "*.sql"), ("Todos los archivos", "*.*")]
+=======
+            filetypes=[("SQLite Database", "*.db")]
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         )
         if not backup_file:
             return
         restore_backup(backup_file)
+<<<<<<< HEAD
         messagebox.showinfo("Restaurado", "Backup restaurado.\n\nReinicie el sistema.")
+=======
+        messagebox.showinfo("Restaurado", "Backup restaurado.\n\nReinicie el sistema.")
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43

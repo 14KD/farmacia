@@ -1,10 +1,16 @@
 import customtkinter as ctk
+<<<<<<< HEAD
 from ui.live_search import LiveSearch
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 from tkinter import ttk, messagebox
 from database.connection import create_connection
 from exports.excel_exporter import export_to_excel
 from auth import session
+<<<<<<< HEAD
 from utils.validators import validate_phone, validate_address
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
 BG          = "#0F1117"
 CARD        = "#1A1D27"
@@ -54,6 +60,7 @@ class CustomersUI:
 
         row1 = ctk.CTkFrame(form_card, fg_color="transparent")
         row1.pack(fill="x", padx=16, pady=(0, 10))
+<<<<<<< HEAD
         row1.columnconfigure((0, 1, 2), weight=1)
 
         # ID interno del cliente seleccionado (sin mostrar en el formulario)
@@ -63,10 +70,19 @@ class CustomersUI:
         self.phone_entry   = self._field(row1, "📞  Teléfono",    1)
         self.address_entry = self._field(row1, "📍  Dirección",   2)
         self.phone_entry.bind("<KeyRelease>", self._limit_phone_length)
+=======
+        row1.columnconfigure((0, 1, 2, 3), weight=1)
+
+        self.id_entry      = self._field(row1, "🪪  ID Cliente",  0)
+        self.name_entry    = self._field(row1, "👤  Nombre",      1)
+        self.phone_entry   = self._field(row1, "📞  Teléfono",    2)
+        self.address_entry = self._field(row1, "📍  Dirección",   3)
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
         # Buscador
         search_row = ctk.CTkFrame(form_card, fg_color="transparent")
         search_row.pack(fill="x", padx=16, pady=(0, 10))
+<<<<<<< HEAD
         self.search_entry = LiveSearch(
             search_row,
             query_fn=self._suggest_customers,
@@ -75,11 +91,24 @@ class CustomersUI:
             placeholder="🔍  Buscar por nombre, ID o teléfono..."
         )
         self.search_entry.pack(fill="x")
+=======
+        sf = ctk.CTkFrame(search_row, fg_color=INPUT_BG, corner_radius=8,
+                           border_width=1, border_color=INPUT_BORDER)
+        sf.pack(side="left", fill="x", expand=True)
+        ctk.CTkLabel(sf, text="🔍", font=("Arial", 14), text_color=SUBTEXT, width=30).pack(side="left", padx=(8, 0))
+        self.search_entry = ctk.CTkEntry(sf, placeholder_text="Buscar por nombre, ID o teléfono...",
+                                          border_width=0, fg_color="transparent", height=40,
+                                          font=("Arial", 13), text_color=TEXT,
+                                          placeholder_text_color="#555870")
+        self.search_entry.pack(side="left", fill="x", expand=True, padx=(4, 8))
+        self.search_entry.bind("<KeyRelease>", self.search_customers)
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
         # Botones según rol
         btn_row = ctk.CTkFrame(form_card, fg_color="transparent")
         btn_row.pack(fill="x", padx=16, pady=(0, 16))
 
+<<<<<<< HEAD
         # Botón Agregar (visible por defecto)
         self.btn_agregar = ctk.CTkButton(btn_row, text="＋  Agregar", height=38, corner_radius=8,
                       fg_color=ACCENT, hover_color="#2EBF7A", text_color="#0F1117",
@@ -95,6 +124,21 @@ class CustomersUI:
         # No se empaca aún — aparece al seleccionar un cliente
 
         if self.is_admin:
+=======
+        # Agregar: disponible para todos
+        ctk.CTkButton(btn_row, text="＋  Agregar", height=38, corner_radius=8,
+                      fg_color=ACCENT, hover_color="#2EBF7A", text_color="#0F1117",
+                      font=("Arial", 12, "bold"),
+                      command=self.add_customer).pack(side="left", padx=(0, 8))
+
+        # Solo admin
+        if self.is_admin:
+            ctk.CTkButton(btn_row, text="✎  Actualizar", height=38, corner_radius=8,
+                          fg_color="#1A3A4A", hover_color="#1E6A9A", text_color=CYAN,
+                          font=("Arial", 12, "bold"),
+                          command=self.update_customer).pack(side="left", padx=(0, 8))
+
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
             ctk.CTkButton(btn_row, text="🗑  Eliminar", height=38, corner_radius=8,
                           fg_color="#2E1A1A", hover_color=DANGER_H, text_color=DANGER,
                           font=("Arial", 12, "bold"),
@@ -121,6 +165,7 @@ class CustomersUI:
 
         style = ttk.Style()
         style.theme_use("clam")
+<<<<<<< HEAD
         style.configure("CLI.Treeview", background="#1A1D27", foreground="#FFFFFF",
                          fieldbackground="#1A1D27", borderwidth=0, font=("Arial", 12), rowheight=34)
         style.configure("CLI.Treeview.Heading", background="#1E2130", foreground="#8B8FA8",
@@ -128,10 +173,20 @@ class CustomersUI:
         style.map("CLI.Treeview",
                   background=[("selected", "#1A2E22"), ("!selected", "#1A1D27")],
                   foreground=[("selected", "#3DD68C"), ("!selected", "#FFFFFF")])
+=======
+        style.configure("CLI.Treeview", background=CARD, foreground=TEXT,
+                         fieldbackground=CARD, borderwidth=0, font=("Arial", 12), rowheight=34)
+        style.configure("CLI.Treeview.Heading", background="#1E2130", foreground=SUBTEXT,
+                         font=("Arial", 11, "bold"), borderwidth=0)
+        style.map("CLI.Treeview",
+                  background=[("selected", "#1A2E22")],
+                  foreground=[("selected", ACCENT)])
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
 
         cols = ("ID", "Nombre", "Teléfono", "Dirección")
         self.tree = ttk.Treeview(table_card, columns=cols, show="headings",
                                   height=16, style="CLI.Treeview")
+<<<<<<< HEAD
         try:
             self.tree.configure(style=self.tree["style"])
             self.tree.tk.call("ttk::style", "configure", self.tree["style"], "-fieldbackground", "#1A1D27")
@@ -139,6 +194,8 @@ class CustomersUI:
             self.tree.tk.call("ttk::style", "configure", self.tree["style"], "-foreground", "#FFFFFF")
         except Exception:
             pass
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         for col, w in zip(cols, [120, 250, 150, 320]):
             self.tree.heading(col, text=col)
             self.tree.column(col, width=w)
@@ -169,6 +226,7 @@ class CustomersUI:
         self.next_btn.pack(side="right")
 
         self.load_customers()
+<<<<<<< HEAD
         self._register_shortcuts()
 
     def _register_shortcuts(self):
@@ -217,10 +275,24 @@ class CustomersUI:
         if len(value) > 10:
             self.phone_entry.delete(10, "end")
 
+=======
+
+    def _field(self, parent, placeholder, col):
+        frame = ctk.CTkFrame(parent, fg_color=INPUT_BG, corner_radius=8,
+                              border_width=1, border_color=INPUT_BORDER)
+        frame.grid(row=0, column=col, padx=(0, 10), sticky="ew", ipady=2)
+        entry = ctk.CTkEntry(frame, placeholder_text=placeholder, border_width=0,
+                              fg_color="transparent", height=42, font=("Arial", 13),
+                              text_color=TEXT, placeholder_text_color="#555870")
+        entry.pack(fill="x", padx=8)
+        return entry
+
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
     def get_connection(self): return create_connection()
 
     def load_customers(self):
         self._page = 0
+<<<<<<< HEAD
         conn = self.get_connection()
         try:
             cur = conn.cursor()
@@ -228,6 +300,12 @@ class CustomersUI:
             self._all_customers = cur.fetchall()
         finally:
             conn.close()
+=======
+        conn = self.get_connection(); cur = conn.cursor()
+        cur.execute("SELECT id, name, phone, address FROM customers ORDER BY name")
+        self._all_customers = cur.fetchall()
+        conn.close()
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         self._render_page()
 
     def _render_page(self):
@@ -236,7 +314,11 @@ class CustomersUI:
         pages = max(1, -(-total // self._page_size))
         start = self._page * self._page_size
         for row in self._all_customers[start:start + self._page_size]:
+<<<<<<< HEAD
             self.tree.insert("", "end", values=row[:4])
+=======
+            self.tree.insert("", "end", values=row)
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         if hasattr(self, "page_lbl"):
             self.page_lbl.configure(text=f"Página {self._page+1} de {pages}  ({total} clientes)")
             self.prev_btn.configure(state="normal" if self._page > 0 else "disabled")
@@ -253,6 +335,7 @@ class CustomersUI:
             self._page += 1
             self._render_page()
 
+<<<<<<< HEAD
     def _suggest_customers(self, text):
         """Retorna sugerencias para el LiveSearch."""
         conn = create_connection(); cur = conn.cursor()
@@ -279,6 +362,17 @@ class CustomersUI:
             self._all_customers = cur.fetchall()
         finally:
             conn.close()
+=======
+    def search_customers(self, event=None):
+        q = self.search_entry.get().strip()
+        conn = self.get_connection(); cur = conn.cursor()
+        cur.execute("""SELECT id, name, phone, address FROM customers
+                       WHERE name LIKE ? OR id LIKE ? OR phone LIKE ?
+                       ORDER BY name""",
+                    (f"%{q}%", f"%{q}%", f"%{q}%"))
+        self._all_customers = cur.fetchall()
+        conn.close()
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         self._page = 0
         self._render_page()
 
@@ -287,6 +381,7 @@ class CustomersUI:
         if not sel: return
         v = self.tree.item(sel[0], "values")
         self.clear_fields()
+<<<<<<< HEAD
         self.id_entry.configure(state="normal")
         self.id_entry.insert(0, v[0])
         self.id_entry.configure(state="disabled")
@@ -332,6 +427,25 @@ class CustomersUI:
                 return
             cur.execute("INSERT INTO customers (id, name, phone, address) VALUES (?,?,?,?)",
                         (cid, name, phone, address))
+=======
+        for entry, val in zip(
+            [self.id_entry, self.name_entry, self.phone_entry, self.address_entry], v
+        ):
+            entry.insert(0, val)
+
+    def add_customer(self):
+        cid  = self.id_entry.get().strip()
+        name = self.name_entry.get().strip()
+        if not cid or not name:
+            messagebox.showerror("Error", "ID y Nombre son obligatorios."); return
+        conn = self.get_connection(); cur = conn.cursor()
+        try:
+            cur.execute("SELECT id FROM customers WHERE id=?", (cid,))
+            if cur.fetchone():
+                messagebox.showerror("Error", "El ID ya existe."); return
+            cur.execute("INSERT INTO customers (id, name, phone, address) VALUES (?,?,?,?)",
+                        (cid, name, self.phone_entry.get(), self.address_entry.get()))
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
             conn.commit()
             messagebox.showinfo("Éxito", f"Cliente '{name}' agregado.")
             self.clear_fields(); self.load_customers()
@@ -341,6 +455,7 @@ class CustomersUI:
             conn.close()
 
     def update_customer(self):
+<<<<<<< HEAD
         cid   = self.id_entry.get().strip()
         phone = self.phone_entry.get().strip()
         address = self.address_entry.get().strip()
@@ -355,6 +470,15 @@ class CustomersUI:
         conn = self.get_connection(); cur = conn.cursor()
         cur.execute("UPDATE customers SET name=?, phone=?, address=? WHERE id=?",
                     (self.name_entry.get().strip(), phone, address, cid))
+=======
+        cid = self.id_entry.get().strip()
+        if not cid:
+            messagebox.showerror("Error", "Seleccione un cliente."); return
+        conn = self.get_connection(); cur = conn.cursor()
+        cur.execute("UPDATE customers SET name=?, phone=?, address=? WHERE id=?",
+                    (self.name_entry.get(), self.phone_entry.get(),
+                     self.address_entry.get(), cid))
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         conn.commit(); conn.close()
         messagebox.showinfo("Éxito", "Cliente actualizado.")
         self.load_customers(); self.clear_fields()
@@ -367,6 +491,7 @@ class CustomersUI:
         name = self.tree.item(sel[0], "values")[1]
         if not messagebox.askyesno("Confirmar", f"¿Eliminar cliente '{name}'?"): return
         conn = self.get_connection(); cur = conn.cursor()
+<<<<<<< HEAD
         try:
             cur.execute("DELETE FROM customers WHERE id=?", (cid,))
             conn.commit()
@@ -391,10 +516,15 @@ class CustomersUI:
             return
         finally:
             conn.close()
+=======
+        cur.execute("DELETE FROM customers WHERE id=?", (cid,))
+        conn.commit(); conn.close()
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         messagebox.showinfo("Éxito", "Cliente eliminado.")
         self.load_customers(); self.clear_fields()
 
     def clear_fields(self):
+<<<<<<< HEAD
         self.id_entry.configure(state="normal")
         self.id_entry.delete(0, "end")
         self.id_entry.configure(state="disabled", border_color=INPUT_BORDER)
@@ -420,3 +550,14 @@ class CustomersUI:
             conn.close()
         filename = export_to_excel(rows, ["ID", "Nombre", "Teléfono", "Dirección"], "clientes.xlsx")
         messagebox.showinfo("Éxito", f"Exportado:\n{filename}")
+=======
+        for e in [self.id_entry, self.name_entry, self.phone_entry, self.address_entry]:
+            e.delete(0, "end")
+
+    def export_customers(self):
+        conn = self.get_connection(); cur = conn.cursor()
+        cur.execute("SELECT id, name, phone, address FROM customers ORDER BY name")
+        rows = cur.fetchall(); conn.close()
+        filename = export_to_excel(rows, ["ID", "Nombre", "Teléfono", "Dirección"], "clientes.xlsx")
+        messagebox.showinfo("Éxito", f"Exportado:\n{filename}")
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43

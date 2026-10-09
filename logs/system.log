@@ -36,6 +36,7 @@
 [2026-05-11 21:03:08] Login exitoso: admin
 [2026-05-11 22:42:56] Login exitoso: admin
 [2026-05-11 23:21:53] Login exitoso: admin
+<<<<<<< HEAD
 [2026-05-15 13:29:56] Login exitoso: admin
 [2026-05-15 13:38:21] Login exitoso: admin
 [2026-05-15 13:49:00] Login exitoso: admin
@@ -46,3 +47,5 @@
 [2026-06-16 22:43:56] Login exitoso: admin
 [2026-06-16 22:53:56] Login exitoso: admin
 [2026-06-16 23:26:35] Login exitoso: admin
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43

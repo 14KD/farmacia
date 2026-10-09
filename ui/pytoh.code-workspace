@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../../pytoh"
+		},
+		{
+			"path": "../../orientado a web"
+		},
+		{
+			"path": "../../base de datos"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
+	}
+}

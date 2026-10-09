@@ -123,6 +123,7 @@ class RecoverPasswordWindow:
 
             return
 
+<<<<<<< HEAD
         if username == "admin":
             messagebox.showerror(
                 "No permitido",
@@ -131,6 +132,8 @@ class RecoverPasswordWindow:
             conn.close()
             return
 
+=======
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
         # =====================================
         # ACTUALIZAR PASSWORD
         # =====================================

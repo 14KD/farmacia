@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 database/backup.py — Backup MariaDB via mysqldump.
 Para MariaDB en XAMPP, el backup se hace exportando desde phpMyAdmin
@@ -78,3 +79,44 @@ def restore_backup(backup_file):
         "4. Selecciona tu archivo .sql\n"
         "5. Haz clic en 'Go'"
     )
+=======
+import shutil
+
+from datetime import datetime
+
+
+# =========================================
+# CREAR BACKUP
+# =========================================
+
+def create_backup():
+
+    source = "pharmacy.db"
+
+    timestamp = datetime.now().strftime(
+        "%Y%m%d_%H%M%S"
+    )
+
+    destination = (
+        f"backups/backup_{timestamp}.db"
+    )
+
+    shutil.copy(
+        source,
+        destination
+    )
+
+    return destination
+# =========================================
+# RESTAURAR BACKUP
+# =========================================
+
+def restore_backup(backup_file):
+
+    destination = "pharmacy.db"
+
+    shutil.copy(
+        backup_file,
+        destination
+    )
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43

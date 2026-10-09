@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 logger.py — Sistema de auditoría con trazabilidad completa.
 Registra usuario, operación, datos y timestamp en:
@@ -127,3 +128,29 @@ def log_login(username: str, success: bool):
 def log_user_action(action: str, target_user: str):
     """Log de gestión de usuarios."""
     audit(f"USUARIO_{action}", f"Afectado: {target_user}", module="usuarios")
+=======
+from datetime import datetime
+
+
+# =========================================
+# GUARDAR LOG
+# =========================================
+
+def write_log(message):
+
+    timestamp = datetime.now().strftime(
+        "%Y-%m-%d %H:%M:%S"
+    )
+
+    log_message = (
+        f"[{timestamp}] {message}\n"
+    )
+
+    with open(
+        "logs/system.log",
+        "a",
+        encoding="utf-8"
+    ) as file:
+
+        file.write(log_message)
+>>>>>>> 79dd05f19e8d73e0fdefe1b9fbbfeb207c3cdd43
