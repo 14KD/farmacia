@@ -1,0 +1,198 @@
+2026-07-16 13:18:42 | INFO | [admin] Login exitoso: admin
+2026-07-16 13:18:42 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 13:18:42 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 13:18:42 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 13:18:46 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+    ~~~~~~~~~~~~~^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 140, in <lambda>
+    command=lambda lbl=label, c=cmd: self._activate(lbl, c)
+                                     ~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 179, in _activate
+    cmd()
+    ~~~^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 799, in show_lots
+    self._show_section(key, lambda f: _get_ui("LotsUI")(f))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 787, in _show_section
+    builder_fn(frame)
+    ~~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 799, in <lambda>
+    self._show_section(key, lambda f: _get_ui("LotsUI")(f))
+                                      ~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\lots_ui.py", line 85, in __init__
+    self._build_reception(self.tabs.tab("📥  Recepción"))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\lots_ui.py", line 476, in _build_reception
+    command=self._add_to_invoice_list).pack(side="right")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LotsUI' object has no attribute '_add_to_invoice_list'
+
+2026-07-16 14:09:19 | INFO | [admin] Login exitoso: admin
+2026-07-16 14:09:19 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 14:09:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 14:09:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 14:09:24 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+    ~~~~~~~~~~~~~^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 140, in <lambda>
+    command=lambda lbl=label, c=cmd: self._activate(lbl, c)
+                                     ~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 179, in _activate
+    cmd()
+    ~~~^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 799, in show_lots
+    self._show_section(key, lambda f: _get_ui("LotsUI")(f))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 787, in _show_section
+    builder_fn(frame)
+    ~~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 799, in <lambda>
+    self._show_section(key, lambda f: _get_ui("LotsUI")(f))
+                                      ~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\lots_ui.py", line 85, in __init__
+    self._build_reception(self.tabs.tab("📥  Recepción"))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\lots_ui.py", line 497, in _build_reception
+    command=self._add_to_invoice_list
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LotsUI' object has no attribute '_add_to_invoice_list'
+
+2026-07-16 14:14:50 | INFO | [admin] Login exitoso: admin
+2026-07-16 14:14:50 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 14:14:51 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 14:14:51 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 16:20:50 | INFO | [admin] Login exitoso: admin
+2026-07-16 16:20:50 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 16:20:51 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 16:20:51 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 18:11:01 | INFO | [admin] Login exitoso: admin
+2026-07-16 18:11:01 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 18:11:03 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 18:11:03 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 18:11:13 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:11:14 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:11:16 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:11:16 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:11:17 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:20:14 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:26:26 | INFO | [admin] Login exitoso: admin
+2026-07-16 18:26:26 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 18:26:27 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 18:26:27 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.

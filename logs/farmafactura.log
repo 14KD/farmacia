@@ -1,0 +1,927 @@
+2026-07-16 13:18:42 | INFO | [admin] Login exitoso: admin
+2026-07-16 13:18:42 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 13:18:42 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 13:18:42 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 13:18:46 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+    ~~~~~~~~~~~~~^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 140, in <lambda>
+    command=lambda lbl=label, c=cmd: self._activate(lbl, c)
+                                     ~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 179, in _activate
+    cmd()
+    ~~~^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 799, in show_lots
+    self._show_section(key, lambda f: _get_ui("LotsUI")(f))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 787, in _show_section
+    builder_fn(frame)
+    ~~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 799, in <lambda>
+    self._show_section(key, lambda f: _get_ui("LotsUI")(f))
+                                      ~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\lots_ui.py", line 85, in __init__
+    self._build_reception(self.tabs.tab("📥  Recepción"))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\lots_ui.py", line 476, in _build_reception
+    command=self._add_to_invoice_list).pack(side="right")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LotsUI' object has no attribute '_add_to_invoice_list'
+
+2026-07-16 14:09:19 | INFO | [admin] Login exitoso: admin
+2026-07-16 14:09:19 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 14:09:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 14:09:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 14:09:24 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+    ~~~~~~~~~~~~~^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 140, in <lambda>
+    command=lambda lbl=label, c=cmd: self._activate(lbl, c)
+                                     ~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 179, in _activate
+    cmd()
+    ~~~^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 799, in show_lots
+    self._show_section(key, lambda f: _get_ui("LotsUI")(f))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 787, in _show_section
+    builder_fn(frame)
+    ~~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\dashboard.py", line 799, in <lambda>
+    self._show_section(key, lambda f: _get_ui("LotsUI")(f))
+                                      ~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\lots_ui.py", line 85, in __init__
+    self._build_reception(self.tabs.tab("📥  Recepción"))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\lots_ui.py", line 497, in _build_reception
+    command=self._add_to_invoice_list
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LotsUI' object has no attribute '_add_to_invoice_list'
+
+2026-07-16 14:14:50 | INFO | [admin] Login exitoso: admin
+2026-07-16 14:14:50 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 14:14:51 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 14:14:51 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 16:20:50 | INFO | [admin] Login exitoso: admin
+2026-07-16 16:20:50 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 16:20:51 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 16:20:51 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 18:11:01 | INFO | [admin] Login exitoso: admin
+2026-07-16 18:11:01 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 18:11:03 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 18:11:03 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 18:11:13 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:11:14 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:11:16 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:11:16 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:11:17 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:20:14 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\2.0\ui\customers_ui.py", line 281, in select_customer
+    self.btn_actualizar.pack(side="left", padx=(0, 8), before=self.btn_agregar)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 298, in pack
+    return super().pack(**self._apply_argument_scaling(kwargs))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2596, in pack_configure
+    self.tk.call(
+    ~~~~~~~~~~~~^
+          ('pack', 'configure', self._w)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          + self._options(cnf, kw))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: window ".!ctkframe2.!ctkframe2.!canvas.!ctkscrollableframe.!ctkframe12.!ctkframe.!ctkframe3.!ctkframe4.!ctkbutton" isn't packed
+
+2026-07-16 18:26:26 | INFO | [admin] Login exitoso: admin
+2026-07-16 18:26:26 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 18:26:27 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 18:26:27 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:07:12 | INFO | [admin] Login exitoso: admin
+2026-07-16 20:07:12 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 20:07:13 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:07:13 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:17:27 | INFO | [admin] Login exitoso: admin
+2026-07-16 20:17:27 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 20:17:28 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:17:28 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:17:57 | INFO | [admin] Login exitoso: admin
+2026-07-16 20:17:57 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 20:17:59 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:17:59 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:18:29 | INFO | [admin] Login exitoso: admin
+2026-07-16 20:18:29 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 20:18:31 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:18:31 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:20:04 | INFO | [admin] Login exitoso: admin
+2026-07-16 20:20:04 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 20:20:06 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:20:06 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:21:05 | INFO | [AUDIT] [AUTH] [LOGIN] [sistema] Usuario: admin1 | FALLIDO
+2026-07-16 20:21:09 | INFO | [admin] Login exitoso: admin
+2026-07-16 20:21:09 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 20:21:11 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:21:11 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:21:14 | INFO | [admin] Login exitoso: admin
+2026-07-16 20:21:14 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 20:21:17 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:21:17 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:26:22 | INFO | [admin] Login exitoso: admin
+2026-07-16 20:26:22 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 20:26:24 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:26:24 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:28:18 | INFO | [admin] Login exitoso: admin
+2026-07-16 20:28:18 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 20:28:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:28:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:31:16 | INFO | [admin] Login exitoso: admin
+2026-07-16 20:31:16 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 20:31:18 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:31:18 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 20:49:27 | INFO | [AUDIT] [LOTES] [LOTE_REGISTRADO] [admin] Producto #13 | Lote: jkhg2134 | Qty: 100 | Factura: 123asdfasd | OK
+2026-07-16 20:49:27 | INFO | [AUDIT] [LOTES] [LOTE_REGISTRADO] [admin] Producto #11 | Lote: aiuh1345 | Qty: 10000 | Factura: 123asdfasd | OK
+2026-07-16 20:49:27 | INFO | [AUDIT] [LOTES] [LOTE_REGISTRADO] [admin] Producto #11 | Lote: huu134 | Qty: 20000 | Factura: 123asdfasd | OK
+2026-07-16 20:53:47 | INFO | [AUDIT] [FACTURACION] [VENTA] [admin] Factura #000008 | Cliente: as | Total: $590.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-16 22:24:16 | INFO | [admin] Login exitoso: admin
+2026-07-16 22:24:16 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 22:24:17 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:24:17 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:24:17 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:24:17 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:24:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:24:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:26:07 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:26:07 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:26:07 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\dashboard.py", line 140, in <lambda>
+    command=lambda lbl=label, c=cmd: self._activate(lbl, c)
+                                     ~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\dashboard.py", line 179, in _activate
+    cmd()
+    ~~~^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\dashboard.py", line 855, in show_cash
+    self._show_section(key, lambda f: _get_ui("CashRegisterUI")(f))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\dashboard.py", line 787, in _show_section
+    builder_fn(frame)
+    ~~~~~~~~~~^^^^^^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\dashboard.py", line 855, in <lambda>
+    self._show_section(key, lambda f: _get_ui("CashRegisterUI")(f))
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\cash_register_ui.py", line 104, in __init__
+    self._load()
+    ~~~~~~~~~~^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\cash_register_ui.py", line 131, in _load
+    self._build_report()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\cash_register_ui.py", line 268, in _build_report
+    self._hourly_chart(chart_card, d["by_hour"], cy)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\cash_register_ui.py", line 330, in _hourly_chart
+    bar.get_height() + max(vals)*0.02,
+                       ~~~~~~~~~^~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+
+2026-07-16 22:26:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:26:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:26:19 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\dashboard.py", line 140, in <lambda>
+    command=lambda lbl=label, c=cmd: self._activate(lbl, c)
+                                     ~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\dashboard.py", line 179, in _activate
+    cmd()
+    ~~~^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\dashboard.py", line 855, in show_cash
+    self._show_section(key, lambda f: _get_ui("CashRegisterUI")(f))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\dashboard.py", line 787, in _show_section
+    builder_fn(frame)
+    ~~~~~~~~~~^^^^^^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\dashboard.py", line 855, in <lambda>
+    self._show_section(key, lambda f: _get_ui("CashRegisterUI")(f))
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\cash_register_ui.py", line 104, in __init__
+    self._load()
+    ~~~~~~~~~~^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\cash_register_ui.py", line 131, in _load
+    self._build_report()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\cash_register_ui.py", line 268, in _build_report
+    self._hourly_chart(chart_card, d["by_hour"], cy)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Darwin\Desktop\python\2.0\2.00\ui\cash_register_ui.py", line 330, in _hourly_chart
+    bar.get_height() + max(vals)*0.02,
+                       ~~~~~~~~~^~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+
+2026-07-16 22:27:19 | INFO | [admin] Login exitoso: admin
+2026-07-16 22:27:19 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 22:27:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:27:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:27:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:27:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:27:26 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:27:26 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:29:39 | INFO | [admin] Login exitoso: admin
+2026-07-16 22:29:39 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 22:29:40 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:29:40 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:29:40 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:29:40 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:29:44 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:29:44 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:53:56 | INFO | [admin] Login exitoso: admin
+2026-07-16 22:53:56 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 22:53:57 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:53:57 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:53:58 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:53:58 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:54:03 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:54:03 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:54:59 | INFO | [admin] Login exitoso: admin
+2026-07-16 22:54:59 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 22:55:01 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:55:01 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:55:01 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:55:01 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:55:06 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:55:06 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:57:38 | INFO | [admin] Login exitoso: admin
+2026-07-16 22:57:38 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 22:57:39 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:57:39 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:57:39 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:57:39 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:57:43 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 22:57:43 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:11:00 | INFO | [admin] Login exitoso: admin
+2026-07-16 23:11:00 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 23:11:01 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:11:01 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:11:01 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:11:01 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:11:06 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:11:06 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:11:12 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:11:12 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:11:15 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:11:15 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:12:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:12:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:13:31 | INFO | [admin] Login exitoso: admin
+2026-07-16 23:13:31 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 23:13:32 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:13:32 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:13:32 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:13:32 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:13:36 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:13:36 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:36:38 | INFO | [admin] Login exitoso: admin
+2026-07-16 23:36:38 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 23:36:40 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:36:40 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:36:40 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:36:40 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:36:46 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:36:46 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:36:53 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:36:53 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:38:22 | INFO | [admin] Login exitoso: admin
+2026-07-16 23:38:22 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 23:38:23 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:38:23 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:38:23 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:38:23 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:38:28 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:38:28 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:48:08 | INFO | [admin] Login exitoso: admin
+2026-07-16 23:48:08 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 23:48:09 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:48:09 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:48:09 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:48:09 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:48:14 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:48:14 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:48:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:48:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:49:01 | INFO | [admin] Login exitoso: admin
+2026-07-16 23:49:01 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 23:49:02 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:49:02 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:49:02 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:49:02 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:49:06 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:49:06 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:51:18 | INFO | [admin] Login exitoso: admin
+2026-07-16 23:51:18 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 23:51:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:51:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:51:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:51:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:51:24 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:51:24 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:53:43 | INFO | [admin] Login exitoso: admin
+2026-07-16 23:53:43 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 23:53:44 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:53:44 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:53:44 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:53:44 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:53:48 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:53:48 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:58:40 | INFO | [admin] Login exitoso: admin
+2026-07-16 23:58:40 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-16 23:58:41 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:58:41 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:58:41 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:58:41 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:58:46 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-16 23:58:46 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:01:28 | INFO | [admin] Login exitoso: admin
+2026-07-17 00:01:28 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-17 00:01:29 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:01:29 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:01:29 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:01:29 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:06:24 | INFO | [admin] Login exitoso: admin
+2026-07-17 00:06:24 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-17 00:06:25 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:06:25 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:06:26 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:06:26 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:08:30 | INFO | [admin] Login exitoso: admin
+2026-07-17 00:08:30 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-17 00:08:31 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:08:31 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:08:31 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:08:31 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:10:20 | INFO | [admin] Login exitoso: admin
+2026-07-17 00:10:20 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-17 00:10:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:10:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:10:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:10:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:12:45 | INFO | [admin] Login exitoso: admin
+2026-07-17 00:12:45 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-17 00:12:46 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:12:46 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:12:47 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:12:47 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:14:36 | INFO | [admin] Login exitoso: admin
+2026-07-17 00:14:36 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-17 00:14:37 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:14:37 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:14:37 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:14:37 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:17:25 | INFO | [admin] Login exitoso: admin
+2026-07-17 00:17:25 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-17 00:17:26 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:17:26 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:17:26 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:17:26 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:28:50 | INFO | [admin] Login exitoso: admin
+2026-07-17 00:28:50 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-17 00:28:51 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:28:51 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:28:52 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:28:52 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:32:28 | INFO | [admin] Login exitoso: admin
+2026-07-17 00:32:28 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-17 00:32:29 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:32:29 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:32:29 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:32:29 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:34:40 | INFO | [admin] Login exitoso: admin
+2026-07-17 00:34:40 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-17 00:34:41 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:34:41 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:34:41 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-17 00:34:41 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:12:10 | INFO | [admin] Login exitoso: admin
+2026-07-18 14:12:10 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-18 14:12:11 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:12:11 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:12:11 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:12:11 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:24:29 | INFO | [admin] Login exitoso: admin
+2026-07-18 14:24:29 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-18 14:24:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:24:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:24:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:24:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:27:27 | INFO | [admin] Login exitoso: admin
+2026-07-18 14:27:27 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-18 14:27:28 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:27:28 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:27:28 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:27:28 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:29:52 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:29:52 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:29:52 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-18 14:29:52 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:14:30 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa_tester] #14 'TEST-PROD-QA' | Precio:$100.0 | OK
+2026-07-19 00:14:30 | INFO | [AUDIT] [INVENTARIO] [PRECIO_CAMBIADO] [qa_tester] Producto #14 'TEST-PROD-QA' | Precio: $100.00 → $125.00 | OK
+2026-07-19 00:14:30 | INFO | [AUDIT] [FACTURACION] [VENTA] [qa_tester] Factura #000009 | Cliente: Cliente QA Test | Total: $1,180.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-19 00:16:38 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa_tester] #15 'TEST-PROD-QA' | Precio:$100.0 | OK
+2026-07-19 00:16:38 | INFO | [AUDIT] [INVENTARIO] [PRECIO_CAMBIADO] [qa_tester] Producto #15 'TEST-PROD-QA' | Precio: $100.00 → $125.00 | OK
+2026-07-19 00:16:39 | INFO | [AUDIT] [FACTURACION] [VENTA] [qa_tester] Factura #000011 | Cliente: Cliente QA Test | Total: $1,180.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-19 00:18:42 | INFO | [admin] Login exitoso: admin
+2026-07-19 00:18:42 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-19 00:18:42 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:18:42 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:18:43 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:18:43 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:21:33 | INFO | [admin] Login exitoso: admin
+2026-07-19 00:21:33 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-19 00:21:34 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:21:34 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:21:34 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:21:34 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:36:49 | INFO | [admin] Login exitoso: admin
+2026-07-19 00:36:49 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-19 00:36:50 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:36:50 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:36:50 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 00:36:50 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 01:01:23 | INFO | [admin] Login exitoso: admin
+2026-07-19 01:01:23 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-19 01:01:24 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 01:01:24 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 01:01:24 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 01:01:24 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 01:03:47 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [admin] #16 'asd' | Precio:$200.0 | OK
+2026-07-19 01:09:04 | INFO | [AUDIT] [LOTES] [LOTE_REGISTRADO] [admin] Producto #16 | Lote: asdassdaf | Qty: 1112 | Factura:  | OK
+2026-07-19 01:17:44 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #17 'TEST-EXP-QA' | Precio:$10.0 | OK
+2026-07-19 01:17:44 | INFO | [AUDIT] [INVENTARIO] [PRECIO_CAMBIADO] [qa] Producto #17 'TEST-EXP-QA' | Precio: $10.00 → $15.00 | OK
+2026-07-19 01:21:01 | INFO | [admin] Login exitoso: admin
+2026-07-19 01:21:01 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-19 01:21:02 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 01:21:02 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 01:21:02 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-19 01:21:02 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-20 13:47:06 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #19 'TEST-A-QA' | Precio:$100.0 | OK
+2026-07-20 13:47:06 | INFO | [AUDIT] [FACTURACION] [VENTA] [qa] Factura #000013 | Cliente: QA Caso A | Total: $1,180.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-20 13:47:06 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #20 'TEST-B-QA' | Precio:$20.0 | OK
+2026-07-20 13:47:06 | INFO | [AUDIT] [FACTURACION] [VENTA] [qa] Factura #000014 | Cliente: QA Caso B | Total: $118.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-20 13:47:06 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #21 'TEST-C-QA' | Precio:$15.0 | OK
+2026-07-20 13:53:47 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #22 'Producto QA Full' | Precio:$50.0 | OK
+2026-07-20 13:53:47 | INFO | [AUDIT] [INVENTARIO] [PRECIO_CAMBIADO] [qa] Producto #22 'Producto QA Full' | Precio: $50.00 → $55.00 | OK
+2026-07-20 13:53:48 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #23 'QA-Lotes-Full' | Precio:$30.0 | OK
+2026-07-20 13:53:48 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #24 'QA-Directo-Full' | Precio:$30.0 | OK
+2026-07-20 13:53:48 | INFO | [AUDIT] [FACTURACION] [VENTA] [qa] Factura #000015 | Cliente: QA Full Directo | Total: $106.20 | Pago: Efectivo | Items: 1 | OK
+2026-07-20 13:53:48 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #25 'QA-Futuro-Full' | Precio:$30.0 | OK
+2026-07-20 16:17:11 | INFO | [admin] Login exitoso: admin
+2026-07-20 16:17:11 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-20 16:17:12 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-20 16:17:12 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-20 16:17:12 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-20 16:17:12 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-20 20:37:25 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #26 'QA-Toggle-A' | Precio:$40.0 | OK
+2026-07-20 20:37:25 | INFO | [AUDIT] [LOTES] [LOTE_REGISTRADO] [qa] Producto #26 | Lote: LOTE-TOGGLE-A | Qty: 20 | Factura:  | OK
+2026-07-20 20:37:25 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #27 'QA-Toggle-B' | Precio:$15.0 | OK
+2026-07-20 20:37:25 | INFO | [AUDIT] [LOTES] [STOCK_DIRECTO_AGREGADO] [qa] Producto #27 | +30 uds (sin lote) | Factura:  | OK
+2026-07-20 20:37:25 | INFO | [AUDIT] [FACTURACION] [VENTA] [qa] Factura #000016 | Cliente: QA Toggle Sale | Total: $236.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-20 20:37:25 | INFO | [AUDIT] [FACTURACION] [VENTA] [qa] Factura #000017 | Cliente: QA Toggle Sale 2 | Total: $177.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-20 20:38:24 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #28 'QA-Toggle-A' | Precio:$40.0 | OK
+2026-07-20 20:38:25 | INFO | [AUDIT] [LOTES] [LOTE_REGISTRADO] [qa] Producto #28 | Lote: LOTE-TOGGLE-A | Qty: 20 | Factura:  | OK
+2026-07-20 20:38:25 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #29 'QA-Toggle-B' | Precio:$15.0 | OK
+2026-07-20 20:38:25 | INFO | [AUDIT] [LOTES] [STOCK_DIRECTO_AGREGADO] [qa] Producto #29 | +30 uds (sin lote) | Factura:  | OK
+2026-07-20 20:38:25 | INFO | [AUDIT] [FACTURACION] [VENTA] [qa] Factura #000018 | Cliente: QA Toggle Sale | Total: $236.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-20 20:38:25 | INFO | [AUDIT] [FACTURACION] [VENTA] [qa] Factura #000019 | Cliente: QA Toggle Sale 2 | Total: $177.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-20 20:41:01 | INFO | [admin] Login exitoso: admin
+2026-07-20 20:41:01 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-20 20:41:01 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-20 20:41:01 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-20 20:41:02 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-20 20:41:02 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 14:36:37 | INFO | [admin] Login exitoso: admin
+2026-07-21 14:36:37 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-21 14:36:38 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 14:36:38 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 14:36:38 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 14:36:38 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 17:39:46 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #30 'QA-Exento-ITBIS' | Precio:$100.0 | OK
+2026-07-21 17:39:46 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [qa] #31 'QA-Normal-ITBIS' | Precio:$60.0 | OK
+2026-07-21 17:39:47 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 17:39:47 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 17:39:47 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 17:39:47 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 19:47:02 | INFO | [admin] Login exitoso: admin
+2026-07-21 19:47:02 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-21 19:47:03 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 19:47:03 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 19:47:03 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-21 19:47:03 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:00:16 | INFO | [admin] Login exitoso: admin
+2026-07-22 23:00:16 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-22 23:00:16 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:00:16 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:00:16 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:00:16 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:00:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:00:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:38:25 | INFO | [admin] Login exitoso: admin
+2026-07-22 23:38:25 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-22 23:38:25 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:38:25 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:38:26 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:38:26 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:38:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-22 23:38:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 00:17:31 | INFO | [admin] Login exitoso: admin
+2026-07-23 00:17:31 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-23 00:17:32 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 00:17:32 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 00:17:32 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 00:17:32 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:32:20 | INFO | [admin] Login exitoso: admin
+2026-07-23 09:32:20 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-23 09:32:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:32:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:32:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:32:21 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:34:04 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:34:04 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:34:04 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:34:04 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:34:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:34:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:34:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 09:34:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 18:19:03 | INFO | [admin] Login exitoso: admin
+2026-07-23 18:19:03 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-23 18:19:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 18:19:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 18:19:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-23 18:19:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 12:14:51 | WARNING | DB init: No se pudo conectar a MySQL.
+Verifica que XAMPP esté corriendo y db_config.json sea correcto.
+2026-07-26 12:15:29 | INFO | [admin] Login exitoso: admin
+2026-07-26 12:15:29 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-26 12:15:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 12:15:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 12:15:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 12:15:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 12:36:04 | INFO | [admin] Login exitoso: admin
+2026-07-26 12:36:04 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-26 12:36:04 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 12:36:04 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 12:36:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 12:36:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 14:38:24 | INFO | [admin] Login exitoso: admin
+2026-07-26 14:38:24 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-26 14:38:25 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 14:38:25 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 14:38:25 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 14:38:25 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:04:55 | INFO | [admin] Login exitoso: admin
+2026-07-26 16:04:55 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-26 16:04:56 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:04:56 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:04:56 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:04:56 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:43:19 | INFO | [admin] Login exitoso: admin
+2026-07-26 16:43:19 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-26 16:43:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:43:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:43:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:43:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:46:20 | INFO | [AUDIT] [COMPRAS] [COMPRA_REGISTRADA] [admin] Compra #1 | Proveedor: Laboratorios HECL | Factura: — | Total: 118,000.00 | OK
+2026-07-26 16:47:08 | INFO | [AUDIT] [COMPRAS] [COMPRA_EDITADA] [admin] Compra #1 | Proveedor: Laboratorios HECL | Factura: — | Total: 118,000.00 | OK
+2026-07-26 16:50:42 | INFO | [AUDIT] [COMPRAS] [COMPRA_EDITADA] [admin] Compra #1 | Proveedor: Laboratorios HECL | Factura: — | Total: 118,000.00 | OK
+2026-07-26 16:51:12 | INFO | [AUDIT] [COMPRAS] [COMPRA_EDITADA] [admin] Compra #1 | Proveedor: Laboratorios HECL | Factura: — | Total: 118,000.00 | OK
+2026-07-26 16:57:30 | INFO | [admin] Login exitoso: admin
+2026-07-26 16:57:30 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-26 16:57:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:57:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:57:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 16:57:30 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 20:35:45 | INFO | [admin] Login exitoso: admin
+2026-07-26 20:35:45 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-26 20:35:46 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 20:35:46 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 20:35:46 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 20:35:46 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 20:36:17 | INFO | [AUDIT] [FACTURACION] [VENTA] [admin] Factura #000021 | Cliente: Darwin | Total: $2,832.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-26 22:15:19 | INFO | [admin] Login exitoso: admin
+2026-07-26 22:15:19 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-26 22:15:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 22:15:19 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 22:15:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 22:15:20 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 22:15:23 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 22:15:23 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 22:15:44 | INFO | [AUDIT] [FACTURACION] [VENTA] [admin] Factura #000022 | Cliente: as | Total: $2,832.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-26 22:43:21 | INFO | [AUDIT] [FACTURACION] [VENTA] [admin] Factura #000023 | Cliente: as | Total: $29,028.00 | Pago: Efectivo | Items: 1 | OK
+2026-07-26 23:16:04 | INFO | [admin] Login exitoso: admin
+2026-07-26 23:16:04 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-26 23:16:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 23:16:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 23:16:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 23:16:05 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 23:16:10 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 23:16:10 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-26 23:17:20 | INFO | [AUDIT] [FACTURACION] [VENTA] [admin] Factura #000024 | Cliente: as | Total: $3,908.16 | Pago: Efectivo | Items: 1 | OK
+2026-07-28 11:35:09 | INFO | [admin] Login exitoso: admin
+2026-07-28 11:35:09 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-07-28 11:35:11 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-28 11:35:11 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-28 11:35:12 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-28 11:35:12 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-07-28 11:39:40 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [admin] #12 'a' | Precio:$20.0 | OK
+2026-08-05 16:09:42 | INFO | [admin] Login exitoso: admin
+2026-08-05 16:09:42 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-08-05 16:09:43 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 16:09:43 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 16:22:59 | INFO | [admin] Login exitoso: admin
+2026-08-05 16:22:59 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-08-05 16:23:00 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 16:23:00 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 16:30:30 | INFO | [admin] Login exitoso: admin
+2026-08-05 16:30:30 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-08-05 16:30:31 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 16:30:31 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 16:43:47 | INFO | [admin] Login exitoso: admin
+2026-08-05 16:43:47 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-08-05 16:43:48 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 16:43:48 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 16:46:36 | INFO | [admin] Login exitoso: admin
+2026-08-05 16:46:36 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-08-05 16:46:37 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 16:46:37 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 20:04:27 | WARNING | DB init: No se pudo conectar a MariaDB.
+Verifica que XAMPP esté corriendo y db_config.json sea correcto.
+2026-08-05 20:04:49 | INFO | [admin] Login exitoso: admin
+2026-08-05 20:04:49 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-08-05 20:04:50 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 20:04:50 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 20:06:22 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [admin] #38 'vitamina c' | Precio:$15.0 | OK
+2026-08-05 20:07:14 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [admin] #39 'colgate' | Precio:$100.0 | OK
+2026-08-05 20:11:23 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [admin] #40 'jabon' | Precio:$500.0 | OK
+2026-08-05 20:25:58 | INFO | [admin] Login exitoso: admin
+2026-08-05 20:25:58 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-08-05 20:25:59 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 20:25:59 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 20:34:15 | INFO | [admin] Login exitoso: admin
+2026-08-05 20:34:15 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-08-05 20:34:16 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-05 20:34:16 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-06 08:21:27 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+    ~~~~~~~~~~~~~~~~~~^
+        query,
+        ^^^^^^
+    ...<3 lines>...
+        query_attrs=self.query_attrs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+_mysql_connector.MySQLInterfaceError: Unknown column 'active' in 'where clause'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+    ~~~~~~~~~~~~~^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\dashboard.py", line 144, in <lambda>
+    command=lambda lbl=label, c=cmd: self._activate(lbl, c)
+                                     ~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\dashboard.py", line 183, in _activate
+    cmd()
+    ~~~^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\dashboard.py", line 867, in show_products
+    self._show_section(key, lambda f: _get_ui("ProductsUI")(f))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\dashboard.py", line 823, in _show_section
+    builder_fn(frame)
+    ~~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\dashboard.py", line 867, in <lambda>
+    self._show_section(key, lambda f: _get_ui("ProductsUI")(f))
+                                      ~~~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\products_ui.py", line 283, in __init__
+    self.load_products()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\products_ui.py", line 590, in load_products
+    def load_products(self): self._page=0; self._search_q=""; self._render_page()
+                                                              ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\products_ui.py", line 593, in _render_page
+    q=self._search_q; total=self._count_products(q)
+                            ~~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\products_ui.py", line 560, in _count_products
+    cur.execute("SELECT COUNT(*) FROM products WHERE active=1")
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\database\connection.py", line 43, in execute
+    self._cur.execute(sql)
+    ~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._stmt_partition["mappable_stmt"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        raw_as_string=self._raw_as_string,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+        err.errno, msg=err.msg, sqlstate=err.sqlstate
+    ) from err
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'active' in 'where clause'
+
+2026-08-06 08:21:36 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+    ~~~~~~~~~~~~~~~~~~^
+        query,
+        ^^^^^^
+    ...<3 lines>...
+        query_attrs=self.query_attrs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+_mysql_connector.MySQLInterfaceError: Table 'farmafactura.purchases' doesn't exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+    ~~~~~~~~~~~~~^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\dashboard.py", line 144, in <lambda>
+    command=lambda lbl=label, c=cmd: self._activate(lbl, c)
+                                     ~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\dashboard.py", line 183, in _activate
+    cmd()
+    ~~~^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\dashboard.py", line 843, in show_purchases
+    self._show_section(key, lambda f: _get_ui("PurchasesUI")(f))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\dashboard.py", line 823, in _show_section
+    builder_fn(frame)
+    ~~~~~~~~~~^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\dashboard.py", line 843, in <lambda>
+    self._show_section(key, lambda f: _get_ui("PurchasesUI")(f))
+                                      ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\purchases_ui.py", line 81, in __init__
+    self._build_query(self.tabs.tab("🔍  Consultar Facturas"))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\purchases_ui.py", line 371, in _build_query
+    self.search_invoices()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\ui\purchases_ui.py", line 375, in search_invoices
+    rows = search_purchases(
+        supplier_name=self.q_supplier.get().strip(),
+    ...<2 lines>...
+        date_to=self.q_date_to.get().strip() or None,
+    )
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\database\purchases.py", line 394, in search_purchases
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\Darwin\Desktop\python\3.0 - copia\database\connection.py", line 41, in execute
+    self._cur.execute(sql, params)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._stmt_partition["mappable_stmt"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        raw_as_string=self._raw_as_string,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "C:\Users\Darwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+        err.errno, msg=err.msg, sqlstate=err.sqlstate
+    ) from err
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'farmafactura.purchases' doesn't exist
+
+2026-08-06 08:37:51 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [admin] #1 'Acetaminofén 500 mg' | Precio:$5.0 | OK
+2026-08-06 08:44:34 | INFO | [admin] Login exitoso: admin
+2026-08-06 08:44:34 | INFO | [AUDIT] [AUTH] [LOGIN] [admin] Usuario: admin | OK
+2026-08-06 17:32:31 | INFO | [AUDIT] [COMPRAS] [COMPRA_REGISTRADA] [admin] Compra #1 | Proveedor: gbc | Factura: 82736q84762 | Total: 3,500.00 | OK
+2026-08-06 19:09:54 | INFO | [AUDIT] [INVENTARIO] [PRODUCTO_AGREGADO] [admin] #2 'winazorb' | Precio:$15.0 | OK
+2026-08-06 19:12:07 | INFO | [AUDIT] [COMPRAS] [COMPRA_REGISTRADA] [admin] Compra #2 | Proveedor: gbc | Factura: 9032840 | Total: 59,000.00 | OK

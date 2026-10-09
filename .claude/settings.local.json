@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd graphify-out/.graphify_python)",
+      "Bash(graphify query *)"
+    ]
+  }
+}
